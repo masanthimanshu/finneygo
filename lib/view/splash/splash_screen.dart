@@ -5,6 +5,13 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: Image.asset(
+          "assets/images/logo.png",
+          width: MediaQuery.of(context).size.width / 2,
+        ),
+      ),
+    );
   }
 }
