@@ -38,6 +38,7 @@ dependencies:
   dio: ^5.7.0
   google_fonts: ^6.2.1
   hive_flutter: ^1.1.0
+  toastification: ^2.3.0
   pin_code_fields: ^8.0.1
   flutter_riverpod: ^2.6.1
   country_code_picker: ^3.1.0

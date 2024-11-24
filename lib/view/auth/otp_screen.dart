@@ -1,4 +1,5 @@
 import 'package:finneygo/components/auth_wrapper.dart';
+import 'package:finneygo/controller/auth_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
@@ -6,10 +7,12 @@ class OtpScreen extends StatefulWidget {
   const OtpScreen({
     super.key,
     required this.code,
+    required this.verId,
     required this.phone,
   });
 
   final String code;
+  final String verId;
   final String phone;
 
   @override
@@ -28,20 +31,24 @@ class _OtpScreenState extends State<OtpScreen> {
           length: 6,
           autoFocus: true,
           appContext: context,
-          pinTheme: otpFieldStyle,
+          pinTheme: _otpFieldStyle,
           onChanged: (text) => _otp = text,
           keyboardType: TextInputType.number,
-          onCompleted: (e) {},
+          onCompleted: (e) => AuthController(context: context).otpController(
+            verId: widget.verId,
+            otp: _otp,
+          ),
         ),
-        nextButton: () {
-          Navigator.pushNamedAndRemoveUntil(context, "/home", (_) => false);
-        },
+        nextButton: () => AuthController(context: context).otpController(
+          verId: widget.verId,
+          otp: _otp,
+        ),
       ),
     );
   }
 }
 
-final otpFieldStyle = PinTheme(
+final _otpFieldStyle = PinTheme(
   fieldWidth: 50,
   fieldHeight: 50,
   inactiveColor: Colors.grey,

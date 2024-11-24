@@ -1,6 +1,6 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:finneygo/components/auth_wrapper.dart';
-import 'package:finneygo/view/auth/otp_screen.dart';
+import 'package:finneygo/controller/auth_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -44,11 +44,9 @@ class _PhoneScreenState extends State<PhoneScreen> {
           ),
         ]),
       ),
-      nextButton: () => Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (_) => OtpScreen(phone: _phone, code: _code),
-        ),
+      nextButton: () => AuthController(context: context).phoneController(
+        code: _code,
+        phone: _phone,
       ),
     );
   }

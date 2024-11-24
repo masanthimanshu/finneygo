@@ -1,9 +1,10 @@
-import 'package:finneygo/utils/theme.dart';
 import 'package:finneygo/utils/routes.dart';
+import 'package:finneygo/utils/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:toastification/toastification.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -22,6 +23,8 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
 
-    return MaterialApp(theme: appTheme, routes: appRoutes);
+    return ToastificationWrapper(
+      child: MaterialApp(theme: appTheme, routes: appRoutes),
+    );
   }
 }
