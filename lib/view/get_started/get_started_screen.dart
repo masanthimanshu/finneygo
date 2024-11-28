@@ -9,6 +9,7 @@ class GetStartedScreen extends StatelessWidget {
       body: Stack(alignment: Alignment.bottomCenter, children: [
         Image.asset(
           "assets/screens/get_started.png",
+          width: double.infinity,
           fit: BoxFit.cover,
         ),
         GestureDetector(

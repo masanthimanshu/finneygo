@@ -19,6 +19,7 @@ class AuthWrapper extends StatelessWidget {
       body: Stack(alignment: Alignment.center, children: [
         Image.asset(
           "assets/screens/auth_screen.png",
+          width: double.infinity,
           fit: BoxFit.cover,
         ),
         Container(
@@ -40,9 +41,12 @@ class AuthWrapper extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset("assets/images/logo.png", width: double.infinity),
-              Text("Welcome User,", style: CustomTextStyle.heading.style),
+              Text(
+                "Welcome User,",
+                style: CustomTextStyle.extraLargeText.style,
+              ),
               SizedBox(height: 5),
-              Text(subHeading, style: CustomTextStyle.subHeading.style),
+              Text(subHeading, style: CustomTextStyle.largeText.style),
               SizedBox(height: 30),
               inputField,
               SizedBox(height: 30),

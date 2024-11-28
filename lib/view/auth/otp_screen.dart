@@ -1,4 +1,4 @@
-import 'package:finneygo/components/auth_wrapper.dart';
+import 'package:finneygo/components/auth/auth_wrapper.dart';
 import 'package:finneygo/controller/auth_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
