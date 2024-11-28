@@ -5,6 +5,19 @@ class ScanOptions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: Text("Scan Bill")),
+      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Image.asset(
+          "assets/images/scan_bill.png",
+          width: MediaQuery.of(context).size.width / 2,
+        ),
+        SizedBox(height: 75, width: double.infinity),
+        Image.asset(
+          "assets/images/upload_bill.png",
+          width: MediaQuery.of(context).size.width / 2,
+        ),
+      ]),
+    );
   }
 }

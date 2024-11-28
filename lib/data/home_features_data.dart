@@ -26,7 +26,7 @@ const List<HomeFeaturesData> homeFeaturesData = [
     subHeading: "Add transaction \nhere",
   ),
   HomeFeaturesData(
-    url: "",
+    url: "/scan-options",
     heading: "Scan Bill",
     cardDolor: Color(0xffCDC1FF),
     icon: FontAwesomeIcons.cameraRetro,

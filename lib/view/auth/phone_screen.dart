@@ -44,7 +44,7 @@ class _PhoneScreenState extends State<PhoneScreen> {
           ),
         ]),
       ),
-      nextButton: () => AuthController(context: context).phoneController(
+      nextButton: () => AuthController(context).phoneController(
         code: _code,
         phone: _phone,
       ),

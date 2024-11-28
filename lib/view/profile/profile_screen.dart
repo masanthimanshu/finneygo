@@ -14,7 +14,7 @@ class ProfileScreen extends StatelessWidget {
           margin: EdgeInsets.all(25),
           width: double.infinity,
           child: ElevatedButton(
-            onPressed: AuthController(context: context).logout,
+            onPressed: AuthController(context).logout,
             child: Text("Logout"),
           ),
         ),

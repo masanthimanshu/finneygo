@@ -34,12 +34,12 @@ class _OtpScreenState extends State<OtpScreen> {
           pinTheme: _otpFieldStyle,
           onChanged: (text) => _otp = text,
           keyboardType: TextInputType.number,
-          onCompleted: (e) => AuthController(context: context).otpController(
+          onCompleted: (e) => AuthController(context).otpController(
             verId: widget.verId,
             otp: _otp,
           ),
         ),
-        nextButton: () => AuthController(context: context).otpController(
+        nextButton: () => AuthController(context).otpController(
           verId: widget.verId,
           otp: _otp,
         ),

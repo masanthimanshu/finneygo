@@ -7,15 +7,13 @@ import '/view/notification/notification_screen.dart';
 import '/view/profile/profile_screen.dart';
 import '/view/scan_bill/scan_options.dart';
 import '/view/transaction/add_transaction.dart';
-import '/view/transaction/edit_transaction.dart';
 
 final Map<String, WidgetBuilder> appRoutes = {
   "/": (e) => const CustomRoot(),
   "/home": (e) => const HomeScreen(),
   "/auth": (e) => const PhoneScreen(),
   "/profile": (e) => const ProfileScreen(),
-  "/scan-option": (e) => const ScanOptions(),
+  "/scan-options": (e) => const ScanOptions(),
   "/add-transaction": (e) => const AddTransaction(),
   "/notification": (e) => const NotificationScreen(),
-  "/edit-transaction": (e) => const EditTransaction(),
 };
