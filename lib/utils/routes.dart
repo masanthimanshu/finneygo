@@ -1,19 +1,17 @@
-import 'package:finneygo/root/custom_root.dart';
+import 'package:finneygo/navigation/navigation_handler.dart';
 import 'package:flutter/material.dart';
 
-import '/view/auth/phone_screen.dart';
-import '/view/home/home_screen.dart';
-import '/view/notification/notification_screen.dart';
-import '/view/profile/profile_screen.dart';
-import '/view/scan_bill/scan_options.dart';
-import '/view/transaction/add_transaction.dart';
+import '/features/auth/screen/phone_screen.dart';
+import '/features/home/screen/home_screen.dart';
+import '/features/notification/screen/notification_screen.dart';
+import '/features/profile/screen/profile_screen.dart';
+import '/features/transaction/screen/add_screen.dart';
 
 final Map<String, WidgetBuilder> appRoutes = {
-  "/": (e) => const CustomRoot(),
   "/home": (e) => const HomeScreen(),
   "/auth": (e) => const PhoneScreen(),
+  "/": (e) => const NavigationHandler(),
   "/profile": (e) => const ProfileScreen(),
-  "/scan-options": (e) => const ScanOptions(),
-  "/add-transaction": (e) => const AddTransaction(),
   "/notification": (e) => const NotificationScreen(),
+  "/add-transaction": (e) => const AddTransactionScreen(),
 };

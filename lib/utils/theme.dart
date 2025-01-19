@@ -6,6 +6,8 @@ final ThemeData appTheme = ThemeData(
   textTheme: GoogleFonts.notoSansTextTheme(),
   appBarTheme: AppBarTheme(
     elevation: 0,
+    toolbarHeight: 80,
+    centerTitle: false,
     scrolledUnderElevation: 0,
     backgroundColor: Colors.white,
     titleTextStyle: GoogleFonts.notoSans(
@@ -13,6 +15,9 @@ final ThemeData appTheme = ThemeData(
       color: Colors.black,
       fontWeight: FontWeight.bold,
     ),
+  ),
+  inputDecorationTheme: InputDecorationTheme(
+    hintStyle: GoogleFonts.notoSans(fontSize: 16),
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(

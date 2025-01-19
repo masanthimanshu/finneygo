@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   dio: ^5.7.0
-  intl: ^0.20.0
+  intl: ^0.20.1
   google_fonts: ^6.2.1
   hive_flutter: ^1.1.0
   toastification: ^2.3.0
@@ -51,7 +51,7 @@ dev_dependencies:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
+  # activated in the `analysis_options.yaml` file located at the navigation of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
