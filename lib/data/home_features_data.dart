@@ -20,24 +20,24 @@ const List<HomeFeaturesData> homeFeaturesData = [
     url: "/add-transaction",
     heading: "Add Transaction",
     icon: FontAwesomeIcons.plus,
-    subHeading: "Add transaction \nhere",
+    subHeading: "Add transaction here",
   ),
   HomeFeaturesData(
     url: "/scan-options",
     heading: "Scan Bill",
     icon: FontAwesomeIcons.cameraRetro,
-    subHeading: "Scan and upload \nyour bill",
+    subHeading: "Scan and upload your bill",
   ),
   HomeFeaturesData(
     url: "",
     heading: "Bill splitting",
     icon: FontAwesomeIcons.users,
-    subHeading: "Split bill between \nyour friends",
+    subHeading: "Split bill between your friends",
   ),
   HomeFeaturesData(
     url: "",
     heading: "Conversion",
     icon: FontAwesomeIcons.moneyBillTransfer,
-    subHeading: "Convert from one \ncurrency to another",
+    subHeading: "Convert from one currency to another",
   ),
 ];

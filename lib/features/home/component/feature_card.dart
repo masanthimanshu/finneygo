@@ -13,7 +13,7 @@ class FeatureCard extends StatelessWidget {
     return GestureDetector(
       onTap: () => Navigator.pushNamed(context, homeFeaturesData[num].url),
       child: Container(
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.all(25),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: cardColors[num * 2].withOpacity(0.5),

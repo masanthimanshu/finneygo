@@ -10,6 +10,7 @@ enum CustomTextStyle {
   extraSmallText,
   extraLargeText,
   mediumBoldText,
+  mediumGreyText,
   smallGreyBoldText,
   largeBoldGreyText,
   mediumBoldGreyText,
@@ -74,6 +75,12 @@ extension CustomTextStyleExtension on CustomTextStyle {
         return GoogleFonts.notoSans(
           fontSize: 20,
           fontWeight: FontWeight.bold,
+        );
+
+      case CustomTextStyle.mediumGreyText:
+        return GoogleFonts.notoSans(
+          fontSize: 20,
+          color: Colors.black.withOpacity(0.5),
         );
 
       case CustomTextStyle.mediumBoldGreyText:

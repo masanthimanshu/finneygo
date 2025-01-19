@@ -23,16 +23,13 @@ class HomeAppBar extends StatelessWidget {
         ),
       ),
       SizedBox(width: 15),
-      Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text("Greetings 👋", style: CustomTextStyle.mediumBoldText.style),
-          Text(
-            "Track money with ease",
-            style: CustomTextStyle.extraSmallGreyText.style,
-          ),
-        ],
-      ),
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        Text("Greetings 👋", style: CustomTextStyle.mediumBoldText.style),
+        Text(
+          "Track money with ease",
+          style: CustomTextStyle.extraSmallGreyText.style,
+        ),
+      ]),
       Spacer(),
       IconButton(
         onPressed: () => Navigator.pushNamed(context, "/notification"),

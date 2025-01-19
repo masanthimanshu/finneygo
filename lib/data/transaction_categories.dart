@@ -1,15 +1,5 @@
-class TransactionCategories {
-  final String category;
-  final List<String> subCategory;
-
-  const TransactionCategories({
-    required this.category,
-    required this.subCategory,
-  });
-}
-
-const List<TransactionCategories> transactionCategoriesData = [
-  TransactionCategories(category: "Income", subCategory: [
+const Map<String, List<String>> transactionCategories = {
+  "Income": [
     "Salary",
     "Interest",
     "Dividends",
@@ -18,8 +8,8 @@ const List<TransactionCategories> transactionCategoriesData = [
     "Business Income",
     "Freelance/Gig Work",
     "Bonuses/Commissions",
-  ]),
-  TransactionCategories(category: "Expense", subCategory: [
+  ],
+  "Expense": [
     "Fuel",
     "Rent",
     "Hobbies",
@@ -35,17 +25,17 @@ const List<TransactionCategories> transactionCategoriesData = [
     "Water/Electricity",
     "Maintenance/Repairs",
     "Eating Out/Ordering In",
-  ]),
-  TransactionCategories(category: "Savings", subCategory: [
+  ],
+  "Savings": [
     "Emergency Fund",
     "General Savings",
     "Short-term Goals",
-  ]),
-  TransactionCategories(category: "Investment", subCategory: [
+  ],
+  "Investment": [
     "Bonds",
     "Real Estate",
     "Stocks/ETFs",
     "Mutual Funds",
     "Cryptocurrency",
-  ]),
-];
+  ]
+};
